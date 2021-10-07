@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size:32px;
+}
+
+
+.contact_container{
+   
+}
+
+
+.homepage{
+ padding: 64px;
+   background-color: #35E8D0;
+}
+
+.homepage_container{
+    background-color: white;
+    color: #883EEB;
+padding: 64px;
+border-radius: 16px;
+display: flex;
+
+}
+
+.icons{
+    width: 32px;
+    height: 32px;
+}
+
+.profile_image{
+    width: 800px;
+    height: 700px;
+object-fit: cover;
+/* object-position: ; */
+}
+.content_container{
+    margin-left: 32px;
+}
+
+.welocme_text{
+    margin-bottom:16px;
+    text-transform: capitalize;
+}
+.name{
+    margin-bottom:16px;
+    font-size: 48px;
+ text-transform: uppercase;
+}
+
+.role{
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+.desc{
+    margin-bottom: 8px;
+}
+
+.aboutme_container{
+    margin-bottom: 64px;
+}
+
+.contact_container{
+    /* width: 350px; */
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    width: 90%;
+    margin: 32px auto;
+}
+
+.page_links{
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+
+}
+
+.logo{
+    text-transform: uppercase;
+    flex: 1 1 auto;
+
+}
+
+.page_links p{
+text-transform: capitalize;
+}
+
+
+@media (min-width: 320px) and (max-width: 600px) {
+.homepage_container{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
