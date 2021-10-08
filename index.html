@@ -1,8 +1,9 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="./main.css">
     <title>portfolio</title>
+    <link rel="stylesheet" href="./main.css">
+
 </head>
 
 <body>
@@ -15,15 +16,31 @@
 
                 <p class="logo">Lorem</p>
 
-                <div class="page_links">
-                    <p>home</p>
-                    <p>works</p>
-                    <p>about</p>
-                    <p>clients</p>
+                <div class="nav_desktop page_links">
+                    <p>Home</p>
+                    <p>Services</p>
+                    <p>Clients</p>
+                    <p>Contact</p>
                 </div>
 
+                <div id="mySidenav" class="sidenav ">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
 
-
+                <!-- Use any element to open the sidenav -->
+                <span class="menu_open_icon" onclick="openNav()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </span>
             </nav>
 
             <div class="homepage_container">
@@ -85,6 +102,18 @@
             </div>
         </div>
     </div>
+
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>
