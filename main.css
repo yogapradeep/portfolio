@@ -11,8 +11,14 @@
 
 
 .homepage{
- padding: 64px;
+ padding: 32px 0px 64px 0px;
    background-color: #35E8D0;
+  
+}
+
+.homepage_wrapper{
+ width: 90%;
+   margin: 0 auto;
 }
 
 .homepage_container{
@@ -21,7 +27,6 @@
 padding: 64px;
 border-radius: 16px;
 display: flex;
-
 }
 
 .icons{
@@ -30,8 +35,8 @@ display: flex;
 }
 
 .profile_image{
-    width: 800px;
-    height: 700px;
+    width: 600px;
+    height: 500px;
 object-fit: cover;
 /* object-position: ; */
 }
@@ -65,7 +70,7 @@ object-fit: cover;
 .contact_container{
     /* width: 350px; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 
@@ -74,13 +79,13 @@ object-fit: cover;
 
 .navbar{
     display: flex;
-    width: 90%;
-    margin: 32px auto;
+    align-items: center;
+    margin-bottom: 64px;
 }
 
 .page_links{
     display: flex;
-    width: 600px;
+    width: 500px;
     justify-content: space-around;
 
 }
@@ -93,61 +98,6 @@ object-fit: cover;
 
 .page_links p{
 text-transform: capitalize;
+font-size: 24px;
 }
 
-
-@media (min-width: 320px) and (max-width: 600px) {
-.homepage_container{
-    display: flex;
-    flex-direction: column;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
