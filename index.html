@@ -4,6 +4,7 @@
     <title>portfolio</title>
     <link rel="stylesheet" href="./main.css">
 
+
 </head>
 
 <body>
@@ -106,12 +107,16 @@
     <script>
         /* Set the width of the side navigation to 250px */
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+            let sidenav = document.getElementById("mySidenav");
+            console.log("sidenav element:", sidenav);
+            sidenav.style.width = "250px";
+            sidenav.style.backgroundColor = "white";
         }
 
         /* Set the width of the side navigation to 0 */
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
+
         }
     </script>
 </body>
